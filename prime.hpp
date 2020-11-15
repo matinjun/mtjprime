@@ -17,7 +17,9 @@ namespace mtjprime {
 };
 
 namespace mtjprime {
+    // 注意这里n不需要重新声明默认参数，类中已经声明过
     Prime::Prime(int _n):n(_n){
+        printf("n == %d\n", n);
         prime.push_back(2);
         for(int i = 3; i <= n; ++i) {
             bool isprime = true;
